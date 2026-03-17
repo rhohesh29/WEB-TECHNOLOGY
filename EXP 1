@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Online Inventory Management System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+<h1>Online Inventory Management System</h1>
+
+<nav>
+<a href="#">Home</a> |
+<a href="#addproduct">Add Product</a> |
+<a href="#products">Products</a> |
+<a href="#stock">Stock</a> |
+<a href="#suppliers">Suppliers</a> |
+<a href="#orders">Orders</a>
+</nav>
+
+<hr>
+</header>
+
+
+<!-- ================= DASHBOARD ================= -->
+<section>
+<h2>Dashboard</h2>
+
+<p><strong>Total Products:</strong> 120</p>
+<p><strong>Low Stock Items:</strong> 10</p>
+<p><strong>Total Suppliers:</strong> 6</p>
+<p><strong>Total Orders:</strong> 15</p>
+
+<hr>
+</section>
+
+
+<!-- ================= ADD PRODUCT FORM ================= -->
+<section id="addproduct">
+
+<h2>Add Product</h2>
+
+<form>
+
+<label>Product Name:</label><br>
+<input type="text" name="productname" required><br><br>
+
+<label>Product ID:</label><br>
+<input type="text" name="productid" required><br><br>
+
+<label>Category:</label><br>
+<input type="text" name="category"><br><br>
+
+<label>Quantity:</label><br>
+<input type="number" name="quantity"><br><br>
+
+<label>Price:</label><br>
+<input type="number" name="price"><br><br>
+
+<label>Supplier Name:</label><br>
+<input type="text" name="supplier"><br><br>
+
+<button type="submit">Add Product</button>
+
+</form>
+
+<hr>
+
+</section>
+
+
+<!-- ================= PRODUCT LIST ================= -->
+<section id="products">
+
+<h2>Product List</h2>
+
+<table border="1" width="100%" cellpadding="8">
+
+<tr>
+<th>Product ID</th>
+<th>Product Name</th>
+<th>Category</th>
+<th>Quantity</th>
+<th>Price</th>
+<th>Supplier</th>
+</tr>
+
+<tr>
+<td>P101</td>
+<td>Laptop</td>
+<td>Electronics</td>
+<td>15</td>
+<td>50000</td>
+<td>Dell Supplier</td>
+</tr>
+
+<tr>
+<td>P102</td>
+<td>Mouse</td>
+<td>Accessories</td>
+<td>100</td>
+<td>500</td>
+<td>Logitech Supplier</td>
+</tr>
+
+</table>
+
+<hr>
+
+</section>
+
+
+<!-- ================= STOCK SECTION ================= -->
+<section id="stock">
+
+<h2>Stock Status</h2>
+
+<ul>
+
+<li>
+<strong>Laptop</strong><br>
+Quantity Available: 15
+</li>
+
+<br>
+
+<li>
+<strong>Keyboard</strong><br>
+Quantity Available: 8 (Low Stock)
+</li>
+
+</ul>
+
+<hr>
+
+</section>
+
+
+<!-- ================= SUPPLIERS ================= -->
+<section id="suppliers">
+
+<h2>Suppliers</h2>
+
+<ul>
+
+<li>
+<strong>Dell Supplier</strong><br>
+Location: Chennai
+</li>
+
+<br>
+
+<li>
+<strong>Logitech Supplier</strong><br>
+Location: Bangalore
+</li>
+
+</ul>
+
+<hr>
+
+</section>
+
+
+<!-- ================= ORDERS ================= -->
+<section id="orders">
+
+<h2>Recent Orders</h2>
+
+<ul>
+
+<li>
+<strong>Order ID: O101</strong><br>
+Product: Laptop<br>
+Quantity: 5
+</li>
+
+<br>
+
+<li>
+<strong>Order ID: O102</strong><br>
+Product: Mouse<br>
+Quantity: 20
+</li>
+
+</ul>
+
+<hr>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+<p>&copy; 2026 Online Inventory Management System | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
