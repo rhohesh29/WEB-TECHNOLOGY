@@ -1,0 +1,65 @@
+import java.util.*;
+
+class Product {
+    String name;
+    int quantity;
+    double price;
+
+    Product(String name, int quantity, double price) {
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
+    }
+}
+
+public class Main {
+    static ArrayList<Product> products = new ArrayList<>();
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        while (true) {
+            System.out.println("\n1. Add Product");
+            System.out.println("2. View Products");
+            System.out.println("3. Exit");
+            System.out.print("Enter choice: ");
+
+            int choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    addProduct();
+                    break;
+                case 2:
+                    viewProducts();
+                    break;
+                case 3:
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid choice!");
+            }
+        }
+    }
+
+    static void addProduct() {
+        System.out.print("Enter Name: ");
+        String name = sc.next();
+
+        System.out.print("Enter Quantity: ");
+        int qty = sc.nextInt();
+
+        System.out.print("Enter Price: ");
+        double price = sc.nextDouble();
+
+        products.add(new Product(name, qty, price));
+        System.out.println("Product Added!");
+    }
+
+    static void viewProducts() {
+        System.out.println("\nName\tQty\tPrice");
+
+        for (Product p : products) {
+            System.out.println(p.name + "\t" + p.quantity + "\t" + p.price);
+        }
+    }
+}
